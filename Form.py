@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd 
 
-base = pd.read_excel('main/BASE ALUNOS.xlsx')
+base = pd.read_excel('./BASE ALUNOS.xlsx')
 
 id_func = st.selectbox('Qual seu ID ?', base['ID'].unique())
 
@@ -33,6 +33,6 @@ else:
                 for indice in indices:
                     base.at[indice, 'RESPOSTA'] = resposta
 
-base.to_excel('main/BASE ALUNOS.xlsx', index=False)
+base.to_excel('./BASE ALUNOS.xlsx', index=False)
 
 
