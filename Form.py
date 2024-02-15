@@ -8,7 +8,7 @@ id_func = st.selectbox('Qual seu ID ?', base['ID'].unique())
 
 base_fil = base[base['ID'] == id_func]
 
-st.markdown(f'Olá {base_fil.pop('NOME').iloc[0]}!')
+st.markdown(f'Olá {base_fil['NOME']}!')
 
 if base_fil['RESPOSTA'].notnull().any():
     st.write('Você já respondeu esse formulário!')
