@@ -7,6 +7,8 @@ id_func = st.selectbox('Qual seu ID ?', base['ID'].unique())
 
 
 st.write(st.secrets['db_username'])
+st.write(st.secrets['things_i_like'])
+
 
 base_fil = base[base['ID'] == id_func]
 
