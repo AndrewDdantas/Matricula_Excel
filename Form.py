@@ -6,7 +6,7 @@ base = pd.read_excel('./BASE ALUNOS.xlsx')
 id_func = st.selectbox('Qual seu ID ?', base['ID'].unique())
 
 
-st.write("User Db")
+st.write(st.secrets['db_username'])
 
 base_fil = base[base['ID'] == id_func]
 
