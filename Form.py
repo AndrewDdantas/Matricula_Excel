@@ -5,6 +5,8 @@ import pandas as pd
 st.write("DB username:", st.secrets["db_username"])
 st.write("DB password:", st.secrets["db_password"])
 
+st.write('ok')
+
 base = pd.read_excel('./BASE ALUNOS.xlsx')
 
 id_func = st.selectbox('Qual seu ID ?', base['ID'].unique())
