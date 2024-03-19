@@ -6,7 +6,7 @@ base = pd.read_excel('./BASE ALUNOS.xlsx')
 id_func = st.selectbox('Qual seu ID ?', base['ID'].unique())
 
 
-st.write(st.secrets['db_username'])
+st.write(st.secrets['db_username'][0])
 st.write(st.secrets['things_i_like'])
 
 
